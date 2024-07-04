@@ -34,25 +34,26 @@ const Home = () => {
             {error && <div className="error-message">{error}</div>}
             <form onSubmit={handleLogin}>
                 <div className="form-group">
-                    <label>이메일:</label>
                     <input
                         type="email"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
+                        placeholder="이메일"
                         required
                     />
                 </div>
                 <div className="form-group">
-                    <label>비밀번호:</label>
                     <input
                         type="password"
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
+                        placeholder="비밀번호"
                         required
                     />
                 </div>
                 <button type="submit">로그인</button>
             </form>
+
             <button onClick={() => navigate('/signup')}>회원가입</button>
         </div>
     );
