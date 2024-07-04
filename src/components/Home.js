@@ -30,7 +30,7 @@ const Home = () => {
 
     return (
         <div className="form-container">
-            <h2>Shopping Mall</h2>
+            <h2>Online Shop</h2>
             {error && <div className="error-message">{error}</div>}
             <form onSubmit={handleLogin}>
                 <div className="form-group">
