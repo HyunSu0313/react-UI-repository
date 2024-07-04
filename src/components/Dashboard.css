@@ -1,0 +1,126 @@
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    background-color: darkgray;
+    color: #e3dfc1;
+    position: relative; /* 부모 요소가 상대적 위치를 가지도록 설정 */
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+    color: burlywood;
+}
+
+.logo-container {
+    width: 80px;
+    height: 80px;
+}
+
+.logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.shop-name {
+    margin-left: 10px;
+    font-size: 24px;
+}
+
+.welcome-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.welcome-box {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.welcome-box h2 {
+    font-size: 20px;
+}
+
+.welcome-box button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.welcome-box button:hover {
+    background-color: #0056b3;
+}
+
+.search-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    border: none;
+}
+
+.search-input {
+    top: 20px;
+    height: 25px;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 200px;
+    margin-right: 10px;
+    box-shadow: none;
+}
+
+.search-box {
+    margin-left: 10px;
+}
+
+.search-box button {
+    top: 20px;
+    height: 40px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background-color: #0056b3;
+}
+
+.main-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+/* ADMINVIEW와 CUSTOMERVIEW 스타일링 */
+.AdminView, .CustomerView {
+    background-color: white; /* 배경색을 흰색으로 설정 */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* 적절한 여백 설정 */
+}
