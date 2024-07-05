@@ -2,7 +2,7 @@
   "name": "ui",
   "version": "0.1.0",
   "private": true,
-  "proxy": "jhs-lb-398229174.ap-northeast-2.elb.amazonaws.com:8080",
+  "proxy": "http://jhs-lb-1405537176.ap-northeast-2.elb.amazonaws.com",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
