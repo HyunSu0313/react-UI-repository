@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import axios from 'axios';
+import api from '../api';
 import { useNavigate } from 'react-router-dom';
 import './Home.css';
 
@@ -14,7 +14,7 @@ const Home = () => {
         setError('');
 
         try {
-            const response = await axios.post('/login', { email, password });
+            const response = await api.post('/login', { email, password });
 
             if (response.status === 200) {
                 navigate('/dashboard');
@@ -53,7 +53,6 @@ const Home = () => {
                 </div>
                 <button type="submit">로그인</button>
             </form>
-
             <button onClick={() => navigate('/signup')}>회원가입</button>
         </div>
     );

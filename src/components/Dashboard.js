@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import api from '../api';
 import AdminView from './AdminView';
 import CustomerView from './CustomerView';
 import './Dashboard.css';
@@ -12,7 +12,7 @@ const Dashboard = () => {
     useEffect(() => {
         const fetchMember = async () => {
             try {
-                const response = await axios.get('/member');
+                const response = await api.get('/member');
                 setMember(response.data);
                 setLoading(false);
             } catch (error) {
@@ -26,7 +26,7 @@ const Dashboard = () => {
 
     const handleLogout = async () => {
         try {
-            await axios.post('/logout');
+            await api.post('/api/logout');
             window.location.href = '/'; // 로그아웃 후 홈 페이지로 이동
         } catch (error) {
             console.error('Error logging out', error);

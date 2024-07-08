@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import axios from 'axios';
+import api from '../api';
 import './SignupForm.css';
 
 const SignupForm = () => {
@@ -13,7 +13,7 @@ const SignupForm = () => {
         setError(''); // 초기화
 
         try {
-            const response = await axios.post('/register', {
+            const response = await api.post('/register', {
                 email,
                 password,
                 name
