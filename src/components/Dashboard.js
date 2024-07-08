@@ -26,7 +26,7 @@ const Dashboard = () => {
 
     const handleLogout = async () => {
         try {
-            await api.post('/api/logout');
+            await api.post('/logout');
             window.location.href = '/'; // 로그아웃 후 홈 페이지로 이동
         } catch (error) {
             console.error('Error logging out', error);
