@@ -7,6 +7,7 @@ const api = axios.create({
     headers: {
         'Content-Type': 'application/json',
     },
+    withCredentials: true  // 자격 증명 포함
 });
 
 export default api;
